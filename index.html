@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualiter - La Vérité sur l'Information</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>Actualiter</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#fact-checking">Fact-Checking</a></li>
+                <li><a href="#methodologie">Méthodologie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h2>Découvrez la vérité derrière l'actualité</h2>
+                <p>Une approche rigoureuse pour démêler le vrai du faux</p>
+                <div class="hero-buttons">
+                    <a href="#fact-checking" class="btn btn-primary">Voir les vérifications</a>
+                    <a href="#methodologie" class="btn btn-secondary">Notre méthode</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="feature-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Recherche Approfondie</h3>
+                    <p>Nos experts analysent en profondeur chaque information pour vous fournir la vérité.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Vérification Rigoureuse</h3>
+                    <p>Chaque fait est vérifié à travers de multiples sources fiables.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Communauté Engagée</h3>
+                    <p>Participez aux discussions et partagez vos connaissances.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="methodologie" class="methodology-section">
+            <div class="container">
+                <h2>Notre Méthodologie</h2>
+                <div class="methodology-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Collecte d'Information</h3>
+                        <p>Nous rassemblons les informations de multiples sources.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Analyse</h3>
+                        <p>Nos experts vérifient chaque détail avec rigueur.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Vérification</h3>
+                        <p>Confrontation avec des sources officielles et expertes.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Publication</h3>
+                        <p>Publication des résultats avec transparence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fact-checking" class="fact-checking-section">
+            <h2>Dernières Vérifications</h2>
+            <div class="fact-check-grid">
+                <!-- Les articles seront ajoutés dynamiquement ici -->
+            </div>
+        </section>
+
+        <section id="newsletter" class="newsletter-section">
+            <div class="container">
+                <h2>Restez Informé</h2>
+                <p>Recevez nos dernières vérifications directement dans votre boîte mail</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit" class="btn btn-primary">S'abonner</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="chat-bot" class="chat-bot-container">
+            <div class="chat-button">
+                <i class="fas fa-comments"></i>
+            </div>
+            <div class="chat-window" style="display: none;">
+                <div class="chat-header">
+                    <h3>Assistant Actualiter</h3>
+                    <button class="close-chat"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="chat-messages"></div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Posez votre question...">
+                    <button class="send-message"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos d'Actualiter</h3>
+                <p>Notre mission est de fournir une information fiable et vérifiée.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Nous contacter</h3>
+                <p>Email: contact@actualiter.fr</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Actualiter - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html> 

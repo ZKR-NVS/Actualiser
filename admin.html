@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - Actualiter</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>Actualiter - Administration</h1>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <button id="generateDemoLink" class="btn btn-primary">
+                        <i class="fas fa-share"></i> Générer un lien de démo
+                    </button>
+                </li>
+                <li><a href="index.html">Retour au site</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="admin-main">
+        <div class="container">
+            <section class="admin-section">
+                <h2><i class="fas fa-pen-to-square"></i> Nouvel Article</h2>
+                <form id="articleForm" class="article-form">
+                    <div class="form-group">
+                        <label for="title">Titre de l'article</label>
+                        <input type="text" id="title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description courte</label>
+                        <textarea id="description" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="content">Contenu détaillé</label>
+                        <div class="rich-editor">
+                            <div class="editor-toolbar">
+                                <button type="button" data-format="bold"><i class="fas fa-bold"></i></button>
+                                <button type="button" data-format="italic"><i class="fas fa-italic"></i></button>
+                                <button type="button" data-format="list"><i class="fas fa-list"></i></button>
+                                <button type="button" data-format="link"><i class="fas fa-link"></i></button>
+                            </div>
+                            <textarea id="content" rows="10" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="author">Auteur</label>
+                            <input type="text" id="author" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="status">Statut de vérification</label>
+                        <select id="status" required>
+                            <option value="VRAI">VRAI</option>
+                            <option value="FAUX">FAUX</option>
+                            <option value="PARTIEL">PARTIELLEMENT VRAI</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Sources</label>
+                        <div id="sourcesList" class="sources-list">
+                            <div class="source-item">
+                                <input type="text" placeholder="Nom de la source">
+                                <button type="button" class="btn-remove"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <button type="button" id="addSource" class="btn btn-secondary">
+                            <i class="fas fa-plus"></i> Ajouter une source
+                        </button>
+                    </div>
+
+                    <div class="form-preview">
+                        <h3>Aperçu de l'article</h3>
+                        <div id="articlePreview" class="fact-check-card">
+                            <!-- L'aperçu sera généré ici -->
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Publier l'article
+                        </button>
+                        <button type="button" class="btn btn-secondary" id="previewButton">
+                            <i class="fas fa-eye"></i> Aperçu
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="admin-section">
+                <h2><i class="fas fa-list"></i> Articles publiés</h2>
+                <div id="publishedArticles" class="published-articles">
+                    <!-- Les articles publiés seront listés ici -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/admin.js"></script>
+</body>
+</html> 
