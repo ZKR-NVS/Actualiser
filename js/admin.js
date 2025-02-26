@@ -366,7 +366,7 @@ function generateUniqueLink() {
 
     // Utiliser le domaine actuel ou HTTPS par défaut
     const baseUrl = window.location.protocol === 'file:' ? 
-        'https://votre-nom-utilisateur.github.io/votre-repo' : // À remplacer avec votre URL GitHub Pages
+        'https://zkr-nvs.github.io/Actualiser' : // URL GitHub Pages
         window.location.origin;
     
     return `${baseUrl}/index.html?demo=${timestamp}&key=${secureKey}`;
