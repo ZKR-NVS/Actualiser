@@ -280,37 +280,112 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Fonction pour charger la version de démo
 function loadDemoVersion(timestamp, key) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const rotatingKey = urlParams.get('rotate');
     const demoAccesses = JSON.parse(localStorage.getItem('demoAccesses') || '[]');
-    const demoAccess = demoAccesses.find(access => 
-        access.timestamp.toString() === timestamp && 
-        access.key === key &&
-        access.expiration > Date.now()
-    );
+    const currentDailySalt = Math.floor(Date.now() / (24 * 60 * 60 * 1000));
+
+    console.log('Debug - Paramètres reçus:', { timestamp, key, rotatingKey });
+    console.log('Debug - Accès stockés:', demoAccesses);
+
+    // Trouver l'accès correspondant
+    const demoAccess = demoAccesses.find(access => {
+        console.log('Debug - Comparaison:', {
+            timestampMatch: access.timestamp.toString() === timestamp,
+            keyMatch: access.key === key,
+            rotatingKeyMatch: access.rotatingKey === rotatingKey,
+            notExpired: access.expiration > Date.now()
+        });
+        
+        return access.timestamp.toString() === timestamp && 
+               access.key === key &&
+               access.rotatingKey === rotatingKey &&
+               access.expiration > Date.now();
+    });
 
     if (demoAccess) {
-        // Ajouter la bannière de démo
-        addDemoBanner();
-        // Utiliser les articles de la démo
+        // Calculer le temps restant
+        const timeRemaining = demoAccess.expiration - Date.now();
+        const hoursRemaining = Math.floor(timeRemaining / (1000 * 60 * 60));
+        const minutesRemaining = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+
+        console.log('Debug - Temps restant:', { hoursRemaining, minutesRemaining });
+
+        // Ajouter la bannière avec le temps restant exact
+        addDemoBanner(hoursRemaining, minutesRemaining);
+        
+        // Charger les articles de la démo
+        const grid = document.querySelector('.fact-check-grid');
+        if (grid) {
+            displayArticles(demoAccess.articles);
+        }
         return demoAccess.articles;
     } else {
-        // Lien expiré ou invalide
+        console.log('Debug - Accès non trouvé ou expiré');
         showDemoExpiredMessage();
         return [];
     }
 }
 
+// Fonction pour afficher les articles
+function displayArticles(articles) {
+    const grid = document.querySelector('.fact-check-grid');
+    if (!grid) return;
+
+    grid.innerHTML = ''; // Nettoyer la grille existante
+    
+    articles.forEach(article => {
+        const articleElement = document.createElement('article');
+        articleElement.classList.add('fact-check-card');
+        
+        const visibleComments = article.comments.slice(0, COMMENTS_LIMIT);
+        const hasMoreComments = article.comments.length > COMMENTS_LIMIT;
+        
+        articleElement.innerHTML = `
+            <div class="article-header">
+                <div class="status ${article.status.toLowerCase()}">${article.status}</div>
+                <div class="article-meta">
+                    <span class="author"><i class="fas fa-user"></i> ${article.author}</span>
+                    <span class="read-time"><i class="fas fa-clock"></i> ${article.readTime}</span>
+                    <time><i class="fas fa-calendar"></i> ${article.date}</time>
+                </div>
+            </div>
+            <h3>${article.title}</h3>
+            <p class="article-description">${article.description}</p>
+            <div class="article-content">
+                ${article.fullContent}
+            </div>
+            <div class="article-sources">
+                <h4><i class="fas fa-link"></i> Sources vérifiées</h4>
+                <ul>
+                    ${article.sources.map(source => `<li>${source}</li>`).join('')}
+                </ul>
+            </div>
+        `;
+        
+        grid.appendChild(articleElement);
+    });
+}
+
 // Fonction pour ajouter la bannière de démo
-function addDemoBanner() {
+function addDemoBanner(hours, minutes) {
+    // Supprimer l'ancienne bannière si elle existe
+    const existingBanner = document.querySelector('.demo-banner');
+    if (existingBanner) {
+        existingBanner.remove();
+    }
+
     const banner = document.createElement('div');
     banner.className = 'demo-banner';
     banner.innerHTML = `
         <div class="demo-banner-content">
             <i class="fas fa-eye"></i>
             <span>Version de démonstration</span>
-            <small>Cette version est en lecture seule et expire dans 24 heures</small>
+            <small>Cette version est en lecture seule et expire dans ${hours}h ${minutes}min</small>
         </div>
     `;
     document.body.insertBefore(banner, document.body.firstChild);
+    document.body.classList.add('has-demo-banner');
 }
 
 // Fonction pour afficher le message d'expiration
