@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://actualfr.site/</loc>
+        <lastmod>2024-03-01</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1.0</priority>
+        <news:news>
+            <news:publication>
+                <news:name>Actual FR</news:name>
+                <news:language>fr</news:language>
+            </news:publication>
+            <news:publication_date>2024-03-01</news:publication_date>
+            <news:title>Actual FR - Actualités France Vérifiées</news:title>
+        </news:news>
+    </url>
+</urlset> 

@@ -1,0 +1,34 @@
+User-agent: *
+Allow: /
+Sitemap: https://actualfr.site/sitemap.xml
+
+# Mode Maintenance (désactivé)
+# User-agent: *
+# Disallow: /
+# Allow: /maintenance.html
+
+# Optimisations pour les crawlers
+Crawl-delay: 1
+
+# Autoriser Googlebot spécifiquement
+User-agent: Googlebot
+Allow: /
+Allow: /*.html$
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+
+# Autoriser Googlebot-Image
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+
+# Autoriser Googlebot-News
+User-agent: Googlebot-News
+Allow: /

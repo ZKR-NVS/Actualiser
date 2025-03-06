@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#f5f6fa"/>
+    
+    <!-- Document - Centré verticalement -->
+    <rect x="200" y="50" width="400" height="500" rx="20" fill="#fff" stroke="#2c3e50" stroke-width="4"/>
+    
+    <!-- Lines of text - Ajustées à la nouvelle position -->
+    <g fill="#3498db">
+        <rect x="250" y="100" width="300" height="10" rx="5"/>
+        <rect x="250" y="130" width="250" height="10" rx="5"/>
+        <rect x="250" y="160" width="280" height="10" rx="5"/>
+    </g>
+    
+    <!-- Checkmark - Centré -->
+    <circle cx="400" cy="300" r="100" fill="#2ecc71" opacity="0.2"/>
+    <path d="M350 300 L380 330 L450 260" stroke="#2ecc71" stroke-width="15" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Magnifying glass - Ajusté pour l'équilibre -->
+    <g transform="translate(500, 150) rotate(-30)">
+        <circle cx="0" cy="0" r="50" fill="none" stroke="#3498db" stroke-width="12"/>
+        <line x1="35" y1="35" x2="80" y2="80" stroke="#3498db" stroke-width="12" stroke-linecap="round"/>
+    </g>
+</svg> 

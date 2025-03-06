@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#3498db" opacity="0.1"/>
+    
+    <!-- AI Brain -->
+    <g transform="translate(400, 200)">
+        <!-- Brain Outline -->
+        <path d="M-100 0 C-100 -55 -55 -100 0 -100 C55 -100 100 -55 100 0 C100 55 55 100 0 100 C-55 100 -100 55 -100 0" 
+              fill="none" stroke="#2c3e50" stroke-width="4"/>
+        
+        <!-- Circuit Lines -->
+        <g stroke="#3498db" stroke-width="3">
+            <path d="M-80 -40 L80 -40" />
+            <path d="M-60 0 L60 0" />
+            <path d="M-80 40 L80 40" />
+            <path d="M-40 -80 L-40 80" />
+            <path d="M0 -80 L0 80" />
+            <path d="M40 -80 L40 80" />
+        </g>
+        
+        <!-- Circuit Nodes -->
+        <g fill="#3498db">
+            <circle cx="-40" cy="-40" r="5"/>
+            <circle cx="0" cy="-40" r="5"/>
+            <circle cx="40" cy="-40" r="5"/>
+            <circle cx="-40" cy="0" r="5"/>
+            <circle cx="0" cy="0" r="5"/>
+            <circle cx="40" cy="0" r="5"/>
+            <circle cx="-40" cy="40" r="5"/>
+            <circle cx="0" cy="40" r="5"/>
+            <circle cx="40" cy="40" r="5"/>
+        </g>
+    </g>
+    
+    <!-- AI Text -->
+    <g font-family="Arial" font-size="24" text-anchor="middle">
+        <text x="400" y="350" fill="#2c3e50">INTELLIGENCE ARTIFICIELLE</text>
+    </g>
+    
+    <!-- Verification Symbols -->
+    <g transform="translate(150, 200)">
+        <circle cx="0" cy="0" r="40" fill="#2ecc71" opacity="0.2"/>
+        <path d="M-20 0 L-5 15 L20 -20" stroke="#2ecc71" stroke-width="8" fill="none"/>
+    </g>
+    
+    <g transform="translate(650, 200)">
+        <circle cx="0" cy="0" r="40" fill="#e74c3c" opacity="0.2"/>
+        <path d="M-20 -20 L20 20 M-20 20 L20 -20" stroke="#e74c3c" stroke-width="8"/>
+    </g>
+</svg> 

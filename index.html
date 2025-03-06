@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Actualités France en direct 2024 : informations vérifiées et analyses approfondies de l'actualité française. Premier site d'actualités fiables, fact-checking et vérification des faits.">
+    <meta name="keywords" content="actualités france 2024, news france direct, actualités françaises aujourd'hui, information france direct, actualités fiables, fact-checking france, actualités en direct, vérification information">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="google-site-verification" content="d96b0b66dcacd948" />
+    <meta name="author" content="Actual FR">
+    <meta name="geo.region" content="FR">
+    <meta name="geo.placename" content="France">
+    <meta name="news_keywords" content="actualités, france, fact-checking, vérification, news">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Actual FR - L'actualité française vérifiée en direct">
+    <meta property="og:description" content="Premier site d'actualités françaises vérifiées. Informations fiables et analyses approfondies en direct.">
+    <meta property="og:url" content="https://actualfr.site">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Actual FR - L'actualité française vérifiée en direct">
+    <meta name="twitter:description" content="Premier site d'actualités françaises vérifiées. Informations fiables en direct.">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://actualfr.site">
+    
+    <title>Actual FR - Premier site d'actualités françaises vérifiées | Informations en direct</title>
+    <meta name="description" content="Découvrez la vérité derrière l'information avec Actualiter. Vérification des faits, analyse approfondie et méthodologie rigoureuse pour une information fiable.">
+    <meta name="keywords" content="fact-checking, vérification, actualités, information fiable, analyse, news, France">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://actualfr.site/">
+    <meta property="og:title" content="Actualiter - Vérification des faits">
+    <meta property="og:description" content="Découvrez la vérité derrière l'information avec notre processus de vérification rigoureux.">
+    <meta property="og:image" content="https://actualfr.site/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://actualfr.site/">
+    <meta name="twitter:title" content="Actualiter - Vérification des faits">
+    <meta name="twitter:description" content="Découvrez la vérité derrière l'information avec notre processus de vérification rigoureux.">
+    <meta name="twitter:image" content="https://actualfr.site/images/og-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://actualfr.site/">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+    <!-- Données structurées pour Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Actual FR - Actualités France",
+      "alternateName": "Actualités France Vérifiées",
+      "url": "https://actualfr.site",
+      "description": "Premier site d'actualités françaises vérifiées en direct 2024",
+      "inLanguage": "fr-FR",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://actualfr.site/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsMediaOrganization",
+      "name": "Actual FR",
+      "url": "https://actualfr.site",
+      "description": "Premier site d'actualités françaises vérifiées et d'informations fiables",
+      "sameAs": [
+        "https://twitter.com/actualfr",
+        "https://facebook.com/actualfr"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "FR"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://actualfr.site"
+      },
+      "foundingDate": "2024",
+      "knowsAbout": ["Actualités France", "Fact-checking", "Vérification information"]
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles/auth.css">
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1581/1581645.png">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>Actualiter</h1>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#actualites">Actualités</a></li>
+                <li><a href="#methodologie">Méthodologie</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="adminBtn" style="display: none;"><i class="fas fa-cog"></i> Administration</a></li>
+                <li><a href="#" id="themeBtn"><i class="fas fa-palette"></i> Thème</a></li>
+                <li class="auth-menu">
+                    <a href="#" id="loginBtn" class="login-btn"><i class="fas fa-user"></i> Connexion</a>
+                    <a href="#" class="user-profile" style="display: none;">
+                        <div class="avatar-circle"></div>
+                        <span class="user-initials"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Popup de connexion -->
+    <div id="authModal" class="auth-modal">
+        <div class="auth-container">
+            <button class="close-btn">&times;</button>
+            <div class="auth-tabs">
+                <button class="tab-btn active" data-tab="login">Connexion</button>
+                <button class="tab-btn" data-tab="register">Inscription</button>
+            </div>
+            
+            <!-- Formulaire de connexion -->
+            <div class="auth-form active" id="loginForm">
+                <h2>Connexion</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" autocomplete="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Mot de passe</label>
+                        <div class="password-input">
+                            <input type="password" id="loginPassword" autocomplete="current-password" required>
+                            <button type="button" class="toggle-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group remember-forgot">
+                        <label class="remember-me">
+                            <input type="checkbox" id="rememberMe">
+                            <span>Se souvenir de moi</span>
+                        </label>
+                        <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+                    </div>
+                    <button type="submit" class="submit-btn">Se connecter</button>
+                </form>
+                <div class="social-login">
+                    <p>Ou connectez-vous avec</p>
+                    <div class="social-buttons">
+                        <button class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            Google
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Formulaire d'inscription -->
+            <div class="auth-form" id="registerForm">
+                <h2>Inscription</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="registerName">Nom complet</label>
+                        <input type="text" id="registerName" autocomplete="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" id="registerEmail" autocomplete="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Mot de passe</label>
+                        <div class="password-input">
+                            <input type="password" id="registerPassword" autocomplete="new-password" required>
+                            <button type="button" class="toggle-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirmer le mot de passe</label>
+                        <div class="password-input">
+                            <input type="password" id="confirmPassword" autocomplete="new-password" required>
+                            <button type="button" class="toggle-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="terms">
+                            <input type="checkbox" required>
+                            <span>J'accepte les <a href="#">conditions d'utilisation</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup d'information pour le thème -->
+    <div id="themeInfoModal" class="auth-modal">
+        <div class="auth-container">
+            <button class="close-btn">&times;</button>
+            <div class="theme-info-content">
+                <i class="fas fa-palette theme-info-icon"></i>
+                <h2>Personnalisez votre expérience</h2>
+                <p>La personnalisation du thème est une fonctionnalité exclusive réservée aux membres connectés.</p>
+                <div class="theme-features">
+                    <div class="theme-feature">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>Choisissez parmi 6 thèmes prédéfinis</span>
+                    </div>
+                    <div class="theme-feature">
+                        <i class="fas fa-sliders-h"></i>
+                        <span>Personnalisez les couleurs</span>
+                    </div>
+                    <div class="theme-feature">
+                        <i class="fas fa-save"></i>
+                        <span>Sauvegardez vos préférences</span>
+                    </div>
+                </div>
+                <div class="theme-actions">
+                    <button class="btn btn-primary login-redirect">Se connecter</button>
+                    <button class="btn btn-secondary close-theme-info">Plus tard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panneau de personnalisation -->
+    <div id="themePanel" class="theme-panel">
+        <div class="theme-content">
+            <button class="close-theme-btn">&times;</button>
+            <h2>Personnalisation</h2>
+            <div class="theme-section">
+                <h3>Thèmes prédéfinis</h3>
+                <div class="theme-grid">
+                    <button class="theme-option" data-theme="default">
+                        <div class="theme-preview" style="background: linear-gradient(135deg, #2c3e50, #3498db)"></div>
+                        <span>Par défaut</span>
+                    </button>
+                    <button class="theme-option" data-theme="ocean">
+                        <div class="theme-preview" style="background: linear-gradient(135deg, #1a4b6e, #2980b9)"></div>
+                        <span>Océan</span>
+                    </button>
+                    <button class="theme-option" data-theme="forest">
+                        <div class="theme-preview" style="background: linear-gradient(135deg, #2ecc71, #27ae60)"></div>
+                        <span>Forêt</span>
+                    </button>
+                    <button class="theme-option" data-theme="sunset">
+                        <div class="theme-preview" style="background: linear-gradient(135deg, #e74c3c, #c0392b)"></div>
+                        <span>Coucher de soleil</span>
+                    </button>
+                    <button class="theme-option" data-theme="lavender">
+                        <div class="theme-preview" style="background: linear-gradient(135deg, #9b59b6, #8e44ad)"></div>
+                        <span>Lavande</span>
+                    </button>
+                    <button class="theme-option" data-theme="midnight">
+                        <div class="theme-preview" style="background: linear-gradient(135deg, #34495e, #2c3e50)"></div>
+                        <span>Minuit</span>
+                    </button>
+                </div>
+            </div>
+            <div class="theme-section">
+                <h3>Personnalisation avancée</h3>
+                <div class="color-pickers">
+                    <div class="color-picker-group">
+                        <label>Couleur principale</label>
+                        <input type="color" id="primaryColor" value="#2c3e50">
+                    </div>
+                    <div class="color-picker-group">
+                        <label>Couleur secondaire</label>
+                        <input type="color" id="secondaryColor" value="#3498db">
+                    </div>
+                </div>
+            </div>
+            <button class="apply-theme-btn">Appliquer les changements</button>
+        </div>
+    </div>
+
+    <main>
+        <!-- Section Hero améliorée -->
+        <section id="accueil" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up">
+                    <div class="hero-badges">
+                        <span class="badge">Actualités vérifiées</span>
+                        <span class="badge">Fact-checking</span>
+                        <span class="badge">Information fiable</span>
+                    </div>
+                    <h1>L'information vérifiée,<br><span class="gradient-text">pour des choix éclairés</span></h1>
+                    <p class="hero-description">Découvrez une nouvelle approche de l'actualité : des informations rigoureusement vérifiées, des analyses approfondies et une transparence totale dans notre méthodologie.</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Précision</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Veille info</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">+50k</span>
+                            <span class="stat-label">Lecteurs</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#actualites" class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                            Explorer nos analyses
+                            <span class="btn-shine"></span>
+                        </a>
+                        <a href="#methodologie" class="btn btn-secondary">
+                            <i class="fas fa-book"></i>
+                            Notre méthodologie
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual" data-aos="fade-left">
+                    <div class="floating-cards">
+                        <div class="card card-1">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Information vérifiée</span>
+                        </div>
+                        <div class="card card-2">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Sources fiables</span>
+                        </div>
+                        <div class="card card-3">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Analyses détaillées</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span>Découvrir</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Section Introduction -->
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-grid">
+                    <div class="intro-content" data-aos="fade-right">
+                        <h2>Pourquoi Actualiter ?</h2>
+                        <p class="intro-lead">Dans un monde où l'information circule à grande vitesse, nous vous aidons à distinguer le vrai du faux.</p>
+                        <div class="intro-features">
+                            <div class="intro-feature" data-aos="fade-up" data-aos-delay="100">
+                                <i class="fas fa-check-circle"></i>
+                                <h3>Information Vérifiée</h3>
+                                <p>Des sources fiables et vérifiées pour une information de qualité</p>
+                            </div>
+                            <div class="intro-feature" data-aos="fade-up" data-aos-delay="200">
+                                <i class="fas fa-bolt"></i>
+                                <h3>Réactivité</h3>
+                                <p>Une équipe réactive pour traiter l'actualité en temps réel</p>
+                            </div>
+                            <div class="intro-feature" data-aos="fade-up" data-aos-delay="300">
+                                <i class="fas fa-shield-alt"></i>
+                                <h3>Fiabilité</h3>
+                                <p>Un processus rigoureux de vérification des informations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-image" data-aos="fade-left">
+                        <img src="assets/svg/fact-checking.svg" alt="Fact-checking illustration" loading="lazy" onerror="this.src='assets/default-image.svg'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Statistiques -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-content" data-aos="fade-up">
+                    <h2>Notre impact en chiffres</h2>
+                    <div class="stats-grid">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="stat-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-target="1500">0</span>
+                                <span class="stat-label">Faits vérifiés</span>
+                            </div>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-target="50000">0</span>
+                                <span class="stat-label">Lecteurs mensuels</span>
+                            </div>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="stat-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-target="100">0</span>
+                                <span class="stat-label">Sources fiables</span>
+                            </div>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-target="98">0</span>
+                                <span class="stat-label">Taux de satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Actualités -->
+        <section id="actualites" class="articles-section">
+            <div class="container">
+                <div class="articles-header">
+                    <span class="section-tag">Actualités</span>
+                    <h2>Actualités Vérifiées</h2>
+                    <p>Découvrez nos dernières analyses et vérifications des faits d'actualité</p>
+                </div>
+
+                <div class="articles-filter">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="vrai">Vrai <i class="fas fa-check"></i></button>
+                    <button class="filter-btn" data-filter="faux">Faux <i class="fas fa-times"></i></button>
+                    <button class="filter-btn" data-filter="partiel">Partiel <i class="fas fa-exclamation"></i></button>
+                </div>
+
+                <div class="articles-grid">
+                    <!-- Article 1 -->
+                    <article class="article-card" data-category="vrai">
+                        <div class="article-media">
+                            <img src="assets/svg/news1.svg" alt="Impact des réseaux sociaux" loading="lazy" onerror="this.src='assets/default-image.svg'">
+                            <span class="article-status vrai">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                        
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <time datetime="2024-03-20">20 Mars 2024</time>
+                                <span class="article-category">Réseaux Sociaux</span>
+                            </div>
+                            
+                            <h3 class="article-title">
+                                <a href="#">Impact des réseaux sociaux sur l'information</a>
+                            </h3>
+                            
+                            <p class="article-excerpt">
+                                Analyse des dernières tendances en matière de diffusion d'informations sur les réseaux sociaux et leur impact sur la société.
+                            </p>
+                            
+                            <div class="article-footer">
+                                <div class="article-author">
+                                    <img src="https://ui-avatars.com/api/?name=Marie+Dubois&background=random" alt="Marie Dubois">
+                                    <span>Par Marie Dubois</span>
+                                </div>
+                                <a href="#" class="read-more">
+                                    Lire l'analyse
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                </div>
+                            </div>
+                        </article>
+
+                    <!-- Article 2 -->
+                    <article class="article-card" data-category="faux">
+                        <div class="article-media">
+                            <img src="assets/svg/news2.svg" alt="Mythes de la désinformation" loading="lazy" onerror="this.src='assets/default-image.svg'">
+                            <span class="article-status faux">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                        
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <time datetime="2024-03-19">19 Mars 2024</time>
+                                <span class="article-category">Désinformation</span>
+                            </div>
+                            
+                            <h3 class="article-title">
+                                <a href="#">Les mythes de la désinformation</a>
+                            </h3>
+                            
+                            <p class="article-excerpt">
+                                Décryptage des rumeurs les plus répandues sur le web et analyse approfondie de leur origine.
+                            </p>
+                            
+                            <div class="article-footer">
+                                <div class="article-author">
+                                    <img src="https://ui-avatars.com/api/?name=Thomas+Martin&background=random" alt="Thomas Martin">
+                                    <span>Par Thomas Martin</span>
+                                </div>
+                                <a href="#" class="read-more">
+                                    Lire l'analyse
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                </div>
+                            </div>
+                        </article>
+
+                    <!-- Article 3 -->
+                    <article class="article-card" data-category="partiel">
+                        <div class="article-media">
+                            <img src="assets/svg/news3.svg" alt="IA et fact-checking" loading="lazy" onerror="this.src='assets/default-image.svg'">
+                            <span class="article-status partiel">
+                                <i class="fas fa-exclamation"></i>
+                            </span>
+                        </div>
+                        
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <time datetime="2024-03-18">18 Mars 2024</time>
+                                <span class="article-category">Technologie</span>
+                            </div>
+                            
+                            <h3 class="article-title">
+                                <a href="#">Intelligence artificielle et fact-checking</a>
+                            </h3>
+                            
+                            <p class="article-excerpt">
+                                Comment l'IA révolutionne la vérification des faits : opportunités et limites de cette technologie.
+                            </p>
+                            
+                            <div class="article-footer">
+                                <div class="article-author">
+                                    <img src="https://ui-avatars.com/api/?name=Sophie+Bernard&background=random" alt="Sophie Bernard">
+                                    <span>Par Sophie Bernard</span>
+                                </div>
+                                <a href="#" class="read-more">
+                                    Lire l'analyse
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                <div class="articles-pagination">
+                    <button class="load-more">
+                        Charger plus d'articles
+                        <i class="fas fa-spinner"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Méthodologie -->
+        <section id="methodologie" class="methodology-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Notre méthodologie</h2>
+                    <p>Un processus rigoureux en 4 étapes</p>
+                </div>
+                <div class="methodology-timeline" data-aos="fade-up">
+                    <div class="timeline-line"></div>
+                    <div class="methodology-steps">
+                        <div class="step" data-aos="fade-right" data-aos-delay="100">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Collecte</h3>
+                                <p>Identification et recueil des informations à vérifier</p>
+                                <ul class="step-details">
+                                    <li><i class="fas fa-search"></i> Surveillance des médias</li>
+                                    <li><i class="fas fa-filter"></i> Sélection des sujets</li>
+                                    <li><i class="fas fa-database"></i> Collecte des données</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="step" data-aos="fade-left" data-aos-delay="200">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Analyse</h3>
+                                <p>Vérification approfondie auprès de sources fiables</p>
+                                <ul class="step-details">
+                                    <li><i class="fas fa-microscope"></i> Recherche approfondie</li>
+                                    <li><i class="fas fa-check-double"></i> Double vérification</li>
+                                    <li><i class="fas fa-chart-line"></i> Analyse des données</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="step" data-aos="fade-right" data-aos-delay="300">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Validation</h3>
+                                <p>Confirmation par nos experts et spécialistes</p>
+                                <ul class="step-details">
+                                    <li><i class="fas fa-user-check"></i> Révision par les experts</li>
+                                    <li><i class="fas fa-clipboard-check"></i> Validation finale</li>
+                                    <li><i class="fas fa-award"></i> Contrôle qualité</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="step" data-aos="fade-left" data-aos-delay="400">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Publication</h3>
+                                <p>Diffusion des résultats avec transparence</p>
+                                <ul class="step-details">
+                                    <li><i class="fas fa-file-alt"></i> Rédaction claire</li>
+                                    <li><i class="fas fa-share-alt"></i> Diffusion multicanal</li>
+                                    <li><i class="fas fa-comments"></i> Interaction communauté</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact simplifiée -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-content" data-aos="fade-up">
+                    <h2>Contactez-nous</h2>
+                    <p>Notre équipe est à votre écoute</p>
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <a href="mailto:contact@actualiter.com" class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                                <i class="fas fa-envelope"></i>
+                                <h3>Email</h3>
+                                <p>contact@actualiter.com</p>
+                            </a>
+                            <a href="tel:+33123456789" class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                                <i class="fas fa-phone"></i>
+                                <h3>Téléphone</h3>
+                                <p>+33 1 23 45 67 89</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Actualiter est votre source fiable pour la vérification des faits et la lutte contre la désinformation.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Actualiter. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html> 
