@@ -1,0 +1,21 @@
+# Comment mettre à jour GitHub (pour pas oublier mdr)
+
+Yo ! Quand tu modifies des trucs, faut faire ces 3 commandes dans l'ordre :
+
+1) git add .
+   -> ça ajoute tous les fichiers que t'as modifié
+   -> le "." ça veut dire "tout"
+   -> si tu veux ajouter juste un fichier, remplace le "." par le nom du fichier
+
+2) git commit -m "ton message"
+   -> mets un message qui explique ce que t'as changé
+   -> genre "modification page d'accueil" ou "fix bug bouton"
+   -> les guillemets sont importants !
+
+3) git push
+   -> ça envoie tout sur GitHub
+   -> si ça marche pas, utilise : git push --force
+   -> mais attention avec --force, ça écrase tout !
+
+PS: Si t'oublies ces commandes, ce fichier sert à rien donc personne le lira 😅
+PPS: Garde ce fichier dans un coin, on sait jamais... 
